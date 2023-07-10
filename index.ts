@@ -1,3 +1,4 @@
+import './topics/3-functions';
 console.log('Hola mundo');
 
 const a: number = 10;
