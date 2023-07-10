@@ -1,4 +1,4 @@
-import './topics/3-functions';
+import './topics/4-character';
 console.log('Hola mundo');
 
 const a: number = 10;

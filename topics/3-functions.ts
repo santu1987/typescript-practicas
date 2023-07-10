@@ -18,4 +18,5 @@ const result2: string = addNumbersArrow(1, 2);
 console.log({ result });
 
 let multiplyResult: number = multiply(5);
+
 export {};
