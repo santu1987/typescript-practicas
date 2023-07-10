@@ -1,0 +1,42 @@
+Angular de cero experto
+Practicas typescript:
+
+let name: string = 'Strider';
+
+//caso de que una variable tenga dos tipos
+let hpPoints: number | string = 95;
+hpPoints = 'Full';
+let isAlive: boolean = true;
+
+console.log({
+  name: name,
+  hpPoints: hpPoints,
+  isAlive: isAlive,
+});
+
+export {};
+
+Objetos e interfaces
+
+//Habilidades de personaje del señor de los anillos
+//Si la variable no va a cambiar es un const
+const skills: string[] = ['Bash', 'Counter'];
+
+//Una interface permite tipar a un objeto
+// El signo ?, es si el campo es undefined
+interface Character {
+  name: string;
+  hp: number;
+  skills: string[];
+  hometown?: string;
+}
+
+const strider: Character = {
+  name: 'Strider',
+  hp: 100,
+  skills: ['Bash', 'Counter'],
+  hometown: 'Caracas',
+};
+
+console.table(CredentialsContainer);
+export {};
