@@ -66,3 +66,28 @@ let multiplyResult: number = multiply(5);
 export {};
 
 
+
+Ejemplo de character:
+//Creo la interfaz para un personaje
+interface Character {
+  name: string;
+  hp: number;
+  showHp: () => void;
+}
+//Funcion que aumenta la vida del personaje
+const healCharacter = (character: Character, amount: number) => {
+  character.hp += amount;
+};
+//creo al personaje con la interfaz que define arriba
+const strider: Character = {
+  name: 'Aragon',
+  hp: 50,
+  showHp() {
+    console.log(`Puntos de vida ${this.hp}`);
+  },
+};
+
+//Se le incrementan puntos de salud al personaje
+healCharacter(strider, 10);
+healCharacter(strider, 5);
+//Se muestra la salud del personaje
