@@ -1,5 +1,6 @@
 import './topics/4-character';
 import './topics/5-tarea-types';
+import './topics/6-destructuring';
 
 console.log('Hola mundo');
 
