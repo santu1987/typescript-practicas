@@ -2,6 +2,7 @@ import './topics/4-character';
 import './topics/5-tarea-types';
 import './topics/6-destructuring';
 import './topics/7-destructuring-array';
+import './topics/8-destructuring-function';
 
 console.log('Hola mundo');
 
