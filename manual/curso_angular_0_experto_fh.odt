@@ -212,6 +212,50 @@ const [total, taxTotal] = taxtCalculation({
 console.log('Total', total);
 console.log('Taxt', taxTotal);
 
+Import-export:
+//Se quita del final el export{}
+//Se le agrega export a las interfaces o funciones necesarias a exportar
+//Los archivos que maneja importaciones no debería tener llamado de funciones a ejecutar, ya que estas serán llamadas en otros archivos.
+export interface Product {
+  description: string;
+  price: number;
+}
+
+export function taxtCalculation(
+  options: TaxCalculationsOptions
+): [number, number] {
+  let total = 0;
+  const { tax, products } = options;
+  products.forEach(({ price }) => {
+    total += price;
+  });
+  return [total, tax];
+}
+
+
+Luego en el archivo donde vamos a hacer las importaciones destructuramos lo que necesitamos usar:
+import { Product, taxtCalculation } from './9-destructuring-functions-tarea';
+
+const shoppingCart: Product[] = [
+  {
+    description: 'Nokia',
+    price: 100,
+  },
+  {
+    description: 'ipod',
+    price: 1000,
+  },
+];
+const tax = 0.15;
+const [total, taxTotal] = taxtCalculation({
+  products: shoppingCart,
+  tax: tax,
+});
+
+console.log('Total', total);
+console.log('Tax', taxTotal);
+
+
 
 
 
