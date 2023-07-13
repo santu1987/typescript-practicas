@@ -5,6 +5,7 @@ import './topics/7-destructuring-array';
 //import './topics/8-destructuring-function';
 //import './topics/9-destructuring-functions-tarea';
 import './topics/10-import-export';
+import './topics/11-clases';
 
 console.log('Hola mundo');
 
