@@ -30,3 +30,19 @@ export class Hero extends Person {
 
 const batman = new Hero('Batman', 45, 'Bruce Wayne');
 console.log(batman);
+
+//Priorizando la composicion:
+//En vez de crear una clase heroPErson que extiende de persona creamos una clase y le pasamos un atributo mas como el objeto persona.
+//Con la finalidad de facilitar el uso de las clase evitando herencia
+export class HeroPerson {
+  constructor(
+    public alterEgo: string,
+    public age: number,
+    public realName: string,
+    public person: Person
+  ) {}
+}
+
+const clark = new Person('Clark Kent', 'Metropolis');
+const superman = new HeroPerson('Superman', 35, 'CLark', clark);
+console.log(superman);
