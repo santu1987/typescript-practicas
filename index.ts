@@ -7,7 +7,7 @@ import './topics/7-destructuring-array';
 import './topics/10-import-export';
 import './topics/11-clases';
 import './topics/12-generics';
-
+import './topics/13-decorators';
 console.log('Hola mundo');
 
 const a: number = 10;

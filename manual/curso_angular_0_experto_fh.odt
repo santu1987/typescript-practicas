@@ -353,3 +353,31 @@ let amIArray = whatsMyType<number[]>([1, 2, 3, 4, 5]);
 console.log(amIString.split(' '));
 console.log(amINumber.toFixed());
 console.log(amIArray.join());
+
+Decoradores en Angular:
+En este framework hay muchas clases, los decoradores son funciones que modifican el comportamiento de clases.
+
+//Creo un decorador: es una simple funcion
+
+function classDecorator(constructor: any) {
+  return class extends constructor {
+    newProperty = 'New property';
+    hello = 'override';
+  };
+}
+
+@classDecorator
+export class SuperClass {
+  public myProperty: string = 'Abc123';
+
+  print() {
+    console.log('Hola MUndo');
+  }
+}
+//Definicion
+console.log(SuperClass);
+
+//Instancia de la clase
+const myClass = new SuperClass();
+console.log(myClass);
+
