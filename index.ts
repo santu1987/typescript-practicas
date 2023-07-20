@@ -8,6 +8,7 @@ import './topics/10-import-export';
 import './topics/11-clases';
 import './topics/12-generics';
 import './topics/13-decorators';
+import './topics/14-optional-chaining';
 console.log('Hola mundo');
 
 const a: number = 10;
